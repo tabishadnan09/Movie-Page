@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page</title>
+   
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(212, 27, 51);
+        }
+        #container{
+           width: 60%;
+           
+           margin: auto;
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+           grid-template-rows: auto;
+           gap: 40px;
+
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        #container>div{
+            display: flex;
+            border: 1px solid  rgb(212, 27, 51);
+            box-shadow: rgb(237, 59, 83) 0px 5px 15px;
+            border-radius: 10px;
+        }
+        #container>div>div{
+            margin-left: 20px;
+        }
+        button{
+            background-color: rgb(212, 27, 51);
+            padding: 10px;
+            border-radius: 10px;
+            cursor: wait;
+            
+        }
+        /* medium screen */
+
+        @media only screen and (min-width:421px) and (max-width:800px){
+            img{
+                border-radius: 50%;
+            }
+            #container>div{
+                flex-direction: column;
+                padding: 20px;
+            }
+            #container{
+                grid-template-rows: auto;
+            }
+            h2,p{
+                color: rgb(18, 130, 210);
+                font-style: italic;
+            }
+        }
+        /* small screen */
+
+        @media only screen and (min-width:100px) and (max-width:420px){
+            img{
+                border-radius: 50%;
+            }
+            #container>div{
+                flex-direction: column;
+                padding: 20px;
+            }
+            #container{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: auto;
+            }
+            h2,p{
+                color: rgb(4, 37, 63);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Just movies</h1>
+
+    <div id="container">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Radhe_Shyam.jpg/250px-Radhe_Shyam.jpg" alt="">
+            <div>
+                <h2>Radhe Shyam</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book Tickets</button>
+            </div>
+        </div>
+
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_dDpQ6lAwrmutLvaeu9t1tcxatpYJ7XRJQ&s" alt="">
+            <div>
+                <h2>Bhool Bhulaiyaa 3</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book Tickets</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_.jpg" alt="">
+            <div>
+                <h2>RRR</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book Tickets</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tEffe-I50PxMfTrcMzManCLp129Vpu7wuA&s" alt="">
+            <div>
+                <h2>Singham Again</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book Tickets</button>
+            </div>
+        </div>
+        
+        <div>
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/6c/Lucky_Baskhar_film_poster.jpg" alt="">
+                <div>
+                <h2>Lucky Bhaskar</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book Tickets</button>
+            </div>
+        </div>
+    
+        <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV5B8D35LX_648phmmzjG-j6rleOiIvI6-SA&s" alt="">
+                <div>
+                <h2>Joy</h2>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button>Book Tickets</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
